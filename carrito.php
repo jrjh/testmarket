@@ -3,8 +3,8 @@ session_start();
 
 $mensage="";
 
-
-$id=$_POST['id'];
+if(isset($_POST['add'])){
+    $id=$_POST['id'];
 $nombre=$_POST['nombre'];
 $cantidad=$_POST['cantidad'];
 $precio=$_POST['precio'];
@@ -28,5 +28,8 @@ else{
     );
     $_SESSION['CARRITO'][$numeroproductos]=$producto;
 }
+
+}
+
 $mensage=print_r($_SESSION,true);
 ?>
