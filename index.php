@@ -61,7 +61,7 @@ include 'carrito.php';
                             <input type="text" name="nombre" id="nombre" value="<?php echo $producto['nombre']?>">
                             <input type="text" name="precio" id="precio" value="<?php echo $producto['precio']?>">
                             <input type="text" name="cantidad" id="cantidad" value="1">
-                        <button type="button" name="add" value="Agregar" type="submit" class="btn btn-primary">Agregar al carrito</button>
+                        <button name="add" value="Agregar" type="submit" class="btn btn-primary">Agregar al carrito</button>
             </form>
                     </div>
                 </div>
