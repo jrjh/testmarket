@@ -4,7 +4,7 @@ session_start();
 $mensage="";
 
 
-
+$id=$_POST['id'];
 $nombre=$_POST['nombre'];
 $cantidad=$_POST['cantidad'];
 $precio=$_POST['precio'];
@@ -28,5 +28,5 @@ else{
     );
     $_SESSION['CARRITO'][$numeroproductos]=$producto;
 }
-$mensage="datos:".$nombre.$cantidad.$precio;
+$mensage=print_r($_SESSION,true);
 ?>
