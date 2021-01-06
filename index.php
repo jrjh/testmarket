@@ -39,7 +39,7 @@ include 'global/conexion.php';
             $sentencia=$pdo->prepare("SELECT * FROM `articulos`");
             $sentencia->execute();
             $listaproductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
-            print_r($listaproductos);
+            //print_r($listaproductos);
 
             ?>
             <?php
