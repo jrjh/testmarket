@@ -22,7 +22,7 @@
             <li class="nav-item">
             <a class="nav-link" href="showcarro.php">Carrito(
                 <?php
-                    if(empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']);
+                    echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']);
                     ?>
             )</a>
             </li>
