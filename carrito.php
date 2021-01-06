@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+$mensage="";
+
 $id=$_POST['id'];
 $nombre=$_POST['nombre'];
 $cantidad=$_POST['cantidad'];

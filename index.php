@@ -34,7 +34,9 @@ include 'carrito.php';
     </nav>
     <div class="container-fluid" style="margin-top:80px">
         <h1>Seleccione articulos para agregar al carrito de compras.</h1>
-
+        <div class="alert alert-primary" role="alert">
+            <strong>primary</strong>
+        </div>
         <div class="row">
             <?php
             $sentencia=$pdo->prepare("SELECT * FROM `articulos`");
