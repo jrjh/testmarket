@@ -40,19 +40,26 @@ include 'global/conexion.php';
             $sentencia->execute();
             $listaproductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
             print_r($listaproductos);
+
+            ?>
+            <?php
+            foreach($listaproductos as $producto){
             ?>
             <div class="col-3">
                 <div class="card text-left">
-                    <img class="card-img-top" title="Brocoli" src="img/logo.jpg" alt="Brocoli">
+                    <img class="card-img-top" title="Brocoli" src="<?php echo $producto[imagen]?>" alt="Brocoli">
                     <div class="card-body">
-                        <h2>Brocoli</h2>
-                        <h4 class="card-title">$300.00</h4>
-                        <p class="card-text">descripcion</p>
+                        
+                        <h4 class="card-title"><?php echo $producto[nombre]?></h4>
+                        <p class="card-text"><?php echo $producto[descripcion]?></p>
+                        <h2>$<?php echo $producto[precio]?></h2>
                         <button type="button" name="add" value="Agregar" type="submit" class="btn btn-primary">Agregar al carrito</button>
 
                     </div>
                 </div>
             </div>
+            <?php }?>
+            
         </div>
 
 
