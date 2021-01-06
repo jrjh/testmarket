@@ -2,37 +2,9 @@
 include 'global/config.php';
 include 'global/conexion.php';
 include 'carrito.php';
+include 'templates/cabecera.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <title>SuperMarket</title>
-</head>
-
-<body style="height:1500px">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo.jpg" alt="logo" style="width:40px;">
-        </a>
-        <a class="navbar-brand" href="#">Super Market</a>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Admin</a>
-            </li>
-
-        </ul>
-    </nav>
-    <div class="container-fluid" style="margin-top:80px">
         <h1>Seleccione articulos para agregar al carrito de compras.</h1>
         <div class="alert alert-primary" role="alert">
             <?php echo($mensage);?>
@@ -57,10 +29,10 @@ include 'carrito.php';
                         <p class="card-text"><?php echo $producto['descripcion']?></p>
                         <h2>$<?php echo $producto['precio']?></h2>
                         <form action="" method="post">
-                            <input type="text" name="id" id="id" value="<?php echo $producto['id']?>">
-                            <input type="text" name="nombre" id="nombre" value="<?php echo $producto['nombre']?>">
-                            <input type="text" name="precio" id="precio" value="<?php echo $producto['precio']?>">
-                            <input type="text" name="cantidad" id="cantidad" value="1">
+                            <input type="hidden" name="id" id="id" value="<?php echo $producto['id']?>">
+                            <input type="hidden" name="nombre" id="nombre" value="<?php echo $producto['nombre']?>">
+                            <input type="hidden" name="precio" id="precio" value="<?php echo $producto['precio']?>">
+                            <input type="hiden" name="cantidad" id="cantidad" value="1">
                         <button name="add" value="Agregar" type="submit" class="btn btn-primary">Agregar al carrito</button>
             </form>
                     </div>
@@ -72,6 +44,4 @@ include 'carrito.php';
 
 
     </div>
-</body>
-
-</html>
+    <?php include 'templates/pie.php';?>
