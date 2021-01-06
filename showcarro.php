@@ -8,7 +8,7 @@ include 'templates/cabecera.php';
 
 <script>
 $(document).ready( function () {
-    $('tablee').DataTable();
+    $('#tablee').DataTable();
     
 } );
 </script>
