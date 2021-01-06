@@ -28,5 +28,5 @@ else{
     );
     $_SESSION['CARRITO'][$numeroproductos]=$producto;
 }
-$mensage= $nombre $cantidad $precio;
+$mensage="datos:".$nombre.$cantidad.$precio;
 ?>
