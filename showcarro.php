@@ -9,8 +9,7 @@ include 'templates/cabecera.php';
 <script>
 $(document).ready( function () {
     $('tablee').DataTable();
-    data: dataSet,
-    columns: columnDefs
+    
 } );
 </script>
 
