@@ -35,6 +35,12 @@ include 'global/conexion.php';
         <h1>Seleccione articulos para agregar al carrito de compras.</h1>
 
         <div class="row">
+            <?php
+            $sentencia=$pdo->prepare("SELECT * FROM `articulos`");
+            $sentencia->execute();
+            $listaproductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
+            print_r($listaproductos);
+            ?>
             <div class="col-3">
                 <div class="card text-left">
                     <img class="card-img-top" title="Brocoli" src="img/logo.jpg" alt="Brocoli">
