@@ -25,4 +25,5 @@ else{
     );
     $_SESSION['CARRITO'][$numeroproductos]=$producto;
 }
+print_r($_SESSION,true);
 ?>
