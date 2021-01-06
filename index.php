@@ -47,12 +47,12 @@ include 'global/conexion.php';
             ?>
             <div class="col-3">
                 <div class="card text-left">
-                    <img class="card-img-top" title="<?php echo $producto[nombre]?>" src="<?php echo $producto[imagen]?>" alt="Brocoli">
+                    <img class="card-img-top" title="<?php echo $producto['nombre']?>" src="<?php echo $producto['imagen']?>" alt="Brocoli">
                     <div class="card-body">
                         
-                        <h4 class="card-title"><?php echo $producto[nombre]?></h4>
-                        <p class="card-text"><?php echo $producto[descripcion]?></p>
-                        <h2>$<?php echo $producto[precio]?></h2>
+                        <h4 class="card-title"><?php echo $producto['nombre']?></h4>
+                        <p class="card-text"><?php echo $producto['descripcion']?></p>
+                        <h2>$<?php echo $producto['precio']?></h2>
                         <button type="button" name="add" value="Agregar" type="submit" class="btn btn-primary">Agregar al carrito</button>
 
                     </div>
