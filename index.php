@@ -35,7 +35,7 @@ include 'carrito.php';
     <div class="container-fluid" style="margin-top:80px">
         <h1>Seleccione articulos para agregar al carrito de compras.</h1>
         <div class="alert alert-primary" role="alert">
-            <strong>primary</strong>
+            <?php echo($mensage);?>
         </div>
         <div class="row">
             <?php
