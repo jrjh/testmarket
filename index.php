@@ -13,7 +13,7 @@ include 'carrito.php';
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <title>pruebagit3677</title>
+    <title>SuperMarket</title>
 </head>
 
 <body style="height:1500px">
