@@ -6,7 +6,13 @@ include 'templates/cabecera.php';
 <br>
 <h3>Tu carrito</h3>
 
-<table class="table table-striped table-inverse table-responsive">
+<script>
+$(document).ready( function () {
+    $('tablee').DataTable();
+} );
+</script>
+
+<table id='tablee' class="table table-striped table-inverse table-responsive">
     <thead class="thead-inverse">
         <tr>
             <th>titulo</th>
