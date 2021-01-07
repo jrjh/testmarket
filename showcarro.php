@@ -13,7 +13,7 @@ $(document).ready( function () {
 } );
 </script>
 
-<table id="tablee" class="table-responsive-sm">
+<table id="tablee" class="table-responsive">
     <thead>
         <tr>
             <th>Nombre</th>
@@ -42,6 +42,11 @@ $(document).ready( function () {
             <td>Row 1 Data 2</td>
             <td>Row 1 Data 2</td>
             <td><button type="button" class="btn btn-danger">ELIMINAR</button></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="right"><h3>Total</h3></td>
+            <td align="right"><h3>$<?php echo number_format(300,2);?></h3></td>
+            <td></td>
         </tr>
     </tbody>
 </table>
