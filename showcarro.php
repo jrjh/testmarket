@@ -5,7 +5,9 @@ include 'templates/cabecera.php';
 ?>
 <br>
 <h3>Tu carrito</h3>
-
+<?php if (empty($_SESSION['CARRITO'])) {
+    # code...
+?>
 <script>
 $(document).ready( function () {
     $('#tablee').DataTable();
@@ -54,5 +56,8 @@ $(document).ready( function () {
        
     </tbody>
 </table>
-
-<?php include 'templates/pie.php';?>
+<?php }else {?>
+<div class="alert alert-primary" role="alert">
+    <strong>Sin productos agregados</strong>
+</div>
+<?php } include 'templates/pie.php';?>
