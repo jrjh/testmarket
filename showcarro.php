@@ -64,7 +64,7 @@ $(document).ready( function () {
             
         </tr>
         <tr>
-            <td>
+            <td align="center">
             <form action="pago.php" method="post">
             <div class="alert alert-success" role="alert">
             <div class="form-group">
