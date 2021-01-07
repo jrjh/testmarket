@@ -64,26 +64,26 @@ $(document).ready( function () {
             
         </tr>
         <tr>
-            <td align="center">
+            <td>
             <form action="pago.php" method="post">
             <div class="alert alert-success" role="alert">
             <div class="form-group">
-              <label for="nom">Nombre:</label>
-              <input type="text" name="nom" id="nom" class="form-control" placeholder="Campo Obligatorio" aria-describedby="helpId">
-              <small id="helpId" class="text-muted">Nombre completo</small>
-              <label for="">Telefono</label>
-              <input type="text" name="tel" id="tel" class="form-control" placeholder="Campo Obligatorio" aria-describedby="helpId">
-              <small id="helpId" class="text-muted">Telefono Celular</small>
-              <label for="">Domicilio</label>
-              <input type="text" name="dom" id="dom" class="form-control" placeholder="Campo Obligatorio" aria-describedby="helpId">
-              <small id="helpId" class="text-muted">Domicilio</small>
-              <label for="">Correo Electronico</label>
-              <input type="text" name="corr" id="corr" class="form-control" placeholder="Campo Obligatorio" aria-describedby="helpId">
-              <small id="helpId" class="text-muted">Correo Electronico</small>
+              <label for="nomb">Nombre:</label>
+              <input type="text"  name="nomb" id="nomb" class="form-control" placeholder="Campo Obligatorio" aria-describedby="helpId" required>
+              
+              <label for="telb">Telefono</label>
+              <input type="text"  name="telb" id="telb" class="form-control" placeholder="Campo Obligatorio" aria-describedby="helpId" required>
+             
+              <label for="domb">Domicilio</label>
+              <input type="text"  name="domb" id="domb" class="form-control" placeholder="Campo Obligatorio" aria-describedby="helpId" required>
+              
+              <label for="corrb">Correo Electronico</label>
+              <input type="email"  name="corrb" id="corrb" class="form-control" placeholder="Campo Obligatorio" aria-describedby="helpId" required>
+              
             </div> 
             
             </div>
-            <<button type="submit" value="proce" name="add" class="btn btn-primary btn-lg btn-block">Pagar</button>
+            <button type="submit" value="proce" name="add" class="btn btn-primary btn-lg btn-block">Pagar</button>
             </form>
             </td>
         </tr>
