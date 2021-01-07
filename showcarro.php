@@ -16,18 +16,23 @@ $(document).ready( function () {
 <table id="tablee" class="table-responsive-sm">
     <thead>
         <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            
+
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Row 1 Data 1</td>
             <td>Row 1 Data 2</td>
+            <td>Row 1 Data 2</td>
         </tr>
         <tr>
             <td>Row 2 Data 1</td>
             <td>Row 2 Data 2</td>
+            <td>Row 1 Data 2</td>
         </tr>
     </tbody>
 </table>
