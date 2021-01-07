@@ -16,33 +16,26 @@ $(document).ready( function () {
 <table id="tablee" class="table-responsive">
     <thead>
         <tr>
-            <th>Nombre</th>
-            <th>Descripcion</th>
-            <th>Precio</th>
-            <th>Cantidad</th>
-            <th>Total</th>
-            <th>elininar</th>
+            <th width="20%">Nombre</th>
+            <th width="40%">Descripcion</th>
+            <th width="20%">Precio</th>
+            <th width="5%">Cantidad</th>
+            <th width="10%">Total</th>
+            <th width="5%">Opcion</th>
             
 
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Row 1 Data 1</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td><button type="button" class="btn btn-danger">ELIMINAR</button></td>
+            <td width="20%">Row 1 Data 1</td>
+            <td width="40%">Row 1 Data 2</td>
+            <td width="20%">Row 1 Data 2</td>
+            <td width="5%">Row 1 Data 2</td>
+            <td width="10%">Row 1 Data 2</td>
+            <td width="5%"><button type="button" class="btn btn-danger">ELIMINAR</button></td>
         </tr>
-        <tr>
-            <td>Row 2 Data 1</td>
-            <td>Row 2 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
-            <td><button type="button" class="btn btn-danger">ELIMINAR</button></td>
-        </tr>
+        
         
     </tbody>
 </table>
