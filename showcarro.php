@@ -13,7 +13,7 @@ $(document).ready( function () {
 } );
 </script>
 
-<table id="tablee" class="display">
+<table id="tablee" class="table-responsive-sm">
     <thead>
         <tr>
             <th>Column 1</th>
