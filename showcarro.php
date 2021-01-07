@@ -29,14 +29,18 @@ $(document).ready( function () {
         </tr>
     </thead>
     <tbody>
+    <?php $total=0;?>
+    <?php foreach($_SESSION['CARRITO'] as $indice=>$producto){ ?>
         <tr>
-            <td width="20%">Row 1 Data 1</td>
-            <td width="40%">Row 1 Data 2</td>
-            <td width="20%">Row 1 Data 2</td>
-            <td width="5%">Row 1 Data 2</td>
+            <td width="20%"><?php echo $producto['NOMBRE']?></td>
+            <td width="40%"><?php echo $producto['CANTIDAD']?></td>
+            <td width="20%"><?php echo $producto['PRECIO']?></td>
+            <td width="5%"><?php echo number_format($producto['PRECIO']*$producto['CANTIDAD'],2); ?></td>
             <td width="10%">Row 1 Data 2</td>
             <td width="5%"><button type="button" class="btn btn-danger">ELIMINAR</button></td>
         </tr>
+        <?php $total=$total+($producto['PRECIO']*$producto['CANTIDAD']);?>
+        <?php } ?>
         
         
     </tbody>
@@ -47,7 +51,7 @@ $(document).ready( function () {
         
         <tr>
             <td colspan="3" align="right"><h3>Total</h3></td>
-            <td align="right"><h3>$<?php echo number_format(300,2);?></h3></td>
+            <td align="right"><h3>$<?php echo number_format($total,2);?></h3></td>
             <td></td>
         
             
