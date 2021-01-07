@@ -63,6 +63,24 @@ $(document).ready( function () {
             
             
         </tr>
+        <tr>
+            <td colspan="5">
+            <form action="pago.php" method="post">
+            <div class="alert alert-success" role="alert">
+            <div class="form-group">
+              <label for="nom">Nombre:</label>
+              <label for="">Telefono</label>
+              <label for="">Domicilio</label>
+              <label for="">Correo Electronico</label>
+              <input type="text" name="nom" id="nom" class="form-control" placeholder="Campo Obligatorio" aria-describedby="helpId">
+              <small id="helpId" class="text-muted">Help text</small>
+            </div> 
+            
+            </div>
+            <<button type="submit" value="proce" name="add" class="btn btn-primary btn-lg btn-block">Pagar</button>
+            </form>
+            </td>
+        </tr>
        
     </tbody>
 </table>
