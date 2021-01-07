@@ -69,11 +69,17 @@ $(document).ready( function () {
             <div class="alert alert-success" role="alert">
             <div class="form-group">
               <label for="nom">Nombre:</label>
-              <label for="">Telefono</label>
-              <label for="">Domicilio</label>
-              <label for="">Correo Electronico</label>
               <input type="text" name="nom" id="nom" class="form-control" placeholder="Campo Obligatorio" aria-describedby="helpId">
-              <small id="helpId" class="text-muted">Help text</small>
+              <small id="helpId" class="text-muted">Nombre completo</small>
+              <label for="">Telefono</label>
+              <input type="text" name="tel" id="tel" class="form-control" placeholder="Campo Obligatorio" aria-describedby="helpId">
+              <small id="helpId" class="text-muted">Telefono Celular</small>
+              <label for="">Domicilio</label>
+              <input type="text" name="dom" id="dom" class="form-control" placeholder="Campo Obligatorio" aria-describedby="helpId">
+              <small id="helpId" class="text-muted">Domicilio</small>
+              <label for="">Correo Electronico</label>
+              <input type="text" name="corr" id="corr" class="form-control" placeholder="Campo Obligatorio" aria-describedby="helpId">
+              <small id="helpId" class="text-muted">Correo Electronico</small>
             </div> 
             
             </div>
