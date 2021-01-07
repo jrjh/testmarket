@@ -5,8 +5,8 @@ include 'templates/cabecera.php';
 ?>
 <br>
 <h3>Tu carrito</h3>
-<?php if (empty($_SESSION['CARRITO'])) {
-    # code...
+<?php if (!empty($_SESSION['CARRITO'])) {
+
 ?>
 <script>
 $(document).ready( function () {
