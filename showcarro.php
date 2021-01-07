@@ -19,6 +19,9 @@ $(document).ready( function () {
             <th>Nombre</th>
             <th>Descripcion</th>
             <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+            <th>elininar</th>
             
 
         </tr>
@@ -28,11 +31,17 @@ $(document).ready( function () {
             <td>Row 1 Data 1</td>
             <td>Row 1 Data 2</td>
             <td>Row 1 Data 2</td>
+            <td>Row 1 Data 2</td>
+            <td>Row 1 Data 2</td>
+            <td><button type="button" class="btn btn-danger">ELIMINAR</button></td>
         </tr>
         <tr>
             <td>Row 2 Data 1</td>
             <td>Row 2 Data 2</td>
             <td>Row 1 Data 2</td>
+            <td>Row 1 Data 2</td>
+            <td>Row 1 Data 2</td>
+            <td><button type="button" class="btn btn-danger">ELIMINAR</button></td>
         </tr>
     </tbody>
 </table>
