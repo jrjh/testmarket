@@ -39,7 +39,7 @@ if(isset($_POST['add'])){
             $id=$_POST['id'];
 
             foreach($_SESSION['CARRITO'] as $indice=>$producto){
-                if ($producto['ID']==$ID) {
+                if ($producto['ID']==$id) {
                     unset($_SESSION['CARRITO'][$indice]);
                     echo"<script>alert('Articulo Borrado.')</script>";
                 }
