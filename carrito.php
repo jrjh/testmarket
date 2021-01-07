@@ -33,7 +33,8 @@ if(isset($_POST['add'])){
 
            
         }
-        $mensage=print_r($_SESSION,true);
+       // $mensage=print_r($_SESSION,true);
+       $mensage="Articulo Agregado";
         break;
         case "eliminar":
             $id=$_POST['id'];
