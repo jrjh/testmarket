@@ -35,6 +35,16 @@ if(isset($_POST['add'])){
         }
         $mensage=print_r($_SESSION,true);
         break;
+        case "eliminar":
+            $id=$_POST['id'];
+
+            foreach($_SESSION['CARRITO'] as $indice=>$producto){
+                if ($producto['ID']==$ID) {
+                    unset($_SESSION['CARRITO'][$indice]);
+                    echo"<script>alert('Articulo Borrado.')</script>";
+                }
+            }
+            break;
     }
     
 

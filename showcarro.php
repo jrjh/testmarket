@@ -37,7 +37,13 @@ $(document).ready( function () {
             <td width="20%"><?php echo $producto['PRECIO']?></td>
             <td width="5%"><?php echo $producto['CANTIDAD']?></td>
             <td width="10%"><?php echo number_format($producto['PRECIO']*$producto['CANTIDAD'],2); ?></td>
-            <td width="5%"><button type="button" class="btn btn-danger">ELIMINAR</button></td>
+
+            <td width="5%">
+            <form action="" method="post">
+            <input type="hidden" name="id" value="<?php echo $producto['ID']?>" id="">
+            <button type="submit" name="add" value="eliminar" class="btn btn-danger">ELIMINAR</button>
+            </form>
+            </td>
         </tr>
         <?php $total=$total+($producto['PRECIO']*$producto['CANTIDAD']);?>
         <?php } ?>
